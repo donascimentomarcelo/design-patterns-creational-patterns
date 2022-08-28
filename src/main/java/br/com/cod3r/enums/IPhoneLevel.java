@@ -1,4 +1,4 @@
-package br.com.cod3r.factory.apple.enums;
+package br.com.cod3r.enums;
 
 public enum IPhoneLevel {
     STANDARD("standard"),

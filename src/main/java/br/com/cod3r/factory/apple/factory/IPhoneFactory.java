@@ -1,7 +1,7 @@
 package br.com.cod3r.factory.apple.factory;
 
-import br.com.cod3r.factory.apple.enums.IPhoneGeneration;
-import br.com.cod3r.factory.apple.enums.IPhoneLevel;
+import br.com.cod3r.enums.IPhoneGeneration;
+import br.com.cod3r.enums.IPhoneLevel;
 import br.com.cod3r.factory.apple.model.IPhone;
 import br.com.cod3r.factory.apple.model.IPhone11;
 import br.com.cod3r.factory.apple.model.IPhone11Pro;
