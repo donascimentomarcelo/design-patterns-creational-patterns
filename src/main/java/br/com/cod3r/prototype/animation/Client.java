@@ -1,5 +1,6 @@
 package br.com.cod3r.prototype.animation;
 
+import br.com.cod3r.prototype.animation.model.PersonSamples;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,8 +26,38 @@ public class Client {
 		System.out.println("* ");
 		System.out.print("**********************");
 	}
+
+	public static Person addLeft(Person p) throws  CloneNotSupportedException {
+		Person person = (Person) p.clone();
+		person.left();
+		frames.add(person);
+		return person;
+	}
+
+	public static Person addRight(Person p) throws  CloneNotSupportedException {
+		Person person = (Person) p.clone();
+		person.right();
+		frames.add(person);
+		return person;
+	}
 	
-	public static void main(String[] args) {
-		
+	public static void main(String[] args) throws CloneNotSupportedException, InterruptedException {
+		final PersonSamples samples = new PersonSamples();
+
+		Person person = samples.get("stickMan");
+
+		frames.add(person);
+		person = addLeft(person);
+		person = addLeft(person);
+		person = addLeft(person);
+		person = addRight(person);
+		person = addRight(person);
+		person = addRight(person);
+		person = addRight(person);
+		person = addLeft(person);
+		person = addLeft(person);
+		person = addLeft(person);
+
+		animate();
 	}
 }
