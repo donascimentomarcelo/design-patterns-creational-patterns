@@ -51,5 +51,14 @@ O Factory Method permite a uma classe deferir a instanciação para subclasses.
 #
 ### Prototype
 
+Especificar os tipos de objetos a serem criados usando uma instância como protótipo e criar novos objetos ao
+copiar este protótipo.
+
+ * Criar um clone, uma cópia na memoria do objeto original com as alterações que vc deseja fazer a partir do original.
+ * O uso seria algo como: 
+    * `Address addressClone = (Address) address.clone()`
+
+![Alt text](imgs/prototype.jpg "Prototype")
+
 #
 ### Singleton
