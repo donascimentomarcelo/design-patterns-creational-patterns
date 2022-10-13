@@ -62,3 +62,10 @@ copiar este protótipo.
 
 #
 ### Singleton
+
+Garantir que uma classe só tenha uma única instância, e prover um ponto de acesso global a ela.
+
+ * Possuir uma lógica de validação para verificar se instancia já existe. Caso exista, ela deve ser retornada
+ ao invés de uma nova instância ser criada para aquele objeto.
+
+![Alt text](imgs/singleton.jpg "Singleton")
